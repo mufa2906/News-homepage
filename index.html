@@ -1,60 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <link rel="stylesheet" href="./style.css" />
 
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 5rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/logo.svg" alt="" id="logo-image" />
+      <ul class="navbar">
+        <a class="navlink" href="">Home</a>
+        <a class="navlink" href="">New</a>
+        <a class="navlink" href="">Popular</a>
+        <a class="navlink" href="">Trending</a>
+        <a class="navlink" href="">Categories</a>
+      </ul>
+      <figure class="menu">
+        <img
+          class="menu-icon"
+          src="./assets/images/icon-menu.svg"
+          alt=""
+          onclick="alert('Please')"
+        />
+      </figure>
+    </header>
+    <main>
+      <section class="hero-container">
+        <img class="hero-image" src="./assets/images/image-web-3-desktop.jpg" alt=""  >
+        <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
+        <p class="hero-description">
+          We dive into the next evolution of the web that claims to put the power
+          of the platforms back into the hands of the people. But is it really
+          fulfilling its promise?
+        </p>
+        <button class="hero-button">Read more</button>
+      </section>
+      <section class="sidebar">
+        <h2>New</h2>
+        <article>
+          <a href="http://">Hydrogen VS Electric Cars</a>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article>
+          <a href="http://">The Downsides of AI Artistry</a>
+          <p>
+            What are the possible adverse effects of on-demand AI image generation
+            ?
+        </p>
+      </article>
+      <article>
+        <a href="http://en.wikipedia.org/wiki/">Is VC Funding Drying Up?</a>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means. 
+        </p>
+      </article>
+    </section>
+    <section class="blog">
+      <article>
+        <img src="assets/images/image-retro-pcs.jpg" alt="">
+        <h2>
+          <span>
+            01
+          </span>
+          Reviving Retro PCs What happens when old PCs are given modern upgrades?
+        </h2>
+      </article>
+      <article>
+        <img src="assets/images/image-top-laptops.jpg" alt="">
+        <h2>
+          <span>
+            02
+          </span>
+          Top 10 Laptops of 2022 Our best picks for various needs and budgets.
+        </h2>
+      </article>
+      <article>
+        <img src="assets/images/image-gaming-growth.jpg" alt="">
+        <h2>
+          <span>
+            03
+          </span>
+          The Growth of Gaming How the pandemic has sparked fresh opportunities.
+        </h2>
+      </article>
+    </section>
+  </main>
+    
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Muhamad Farhan Junaldi</a>.
+    </div>
+  </body>
 </html>
