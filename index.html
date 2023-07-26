@@ -30,7 +30,7 @@
   </head>
   <body>
     <header>
-      <img src="./assets/images/logo.svg" alt="" id="logo-image" />
+      <img src="./assets/images/logo.svg" alt="" class="logo-image" />
       <ul class="navbar">
         <a class="navlink" href="">Home</a>
         <a class="navlink" href="">New</a>
@@ -43,78 +43,84 @@
           class="menu-icon"
           src="./assets/images/icon-menu.svg"
           alt=""
-          onclick="alert('Please')"
-        />
+        />  
       </figure>
     </header>
     <main>
       <section class="hero-container">
-        <img class="hero-image" src="./assets/images/image-web-3-desktop.jpg" alt=""  >
+        <img
+          class="hero-image"
+          src="./assets/images/image-web-3-desktop.jpg"
+          alt=""
+        />
         <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
         <p class="hero-description">
-          We dive into the next evolution of the web that claims to put the power
-          of the platforms back into the hands of the people. But is it really
-          fulfilling its promise?
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
         </p>
         <button class="hero-button">Read more</button>
       </section>
       <section class="sidebar">
         <h2>New</h2>
-        <article>
-          <a href="http://">Hydrogen VS Electric Cars</a>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <article class="sidebar-item">
+          <a href="http://" class="sidebar-link">Hydrogen VS Electric Cars</a>
+          <p class="sidebar-description">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
         </article>
-        <article>
-          <a href="http://">The Downsides of AI Artistry</a>
-          <p>
-            What are the possible adverse effects of on-demand AI image generation
-            ?
-        </p>
-      </article>
-      <article>
-        <a href="http://en.wikipedia.org/wiki/">Is VC Funding Drying Up?</a>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means. 
-        </p>
-      </article>
-    </section>
-    <section class="blog">
-      <article>
-        <img src="assets/images/image-retro-pcs.jpg" alt="">
-        <h2>
-          <span>
-            01
-          </span>
-          Reviving Retro PCs What happens when old PCs are given modern upgrades?
-        </h2>
-      </article>
-      <article>
-        <img src="assets/images/image-top-laptops.jpg" alt="">
-        <h2>
-          <span>
-            02
-          </span>
-          Top 10 Laptops of 2022 Our best picks for various needs and budgets.
-        </h2>
-      </article>
-      <article>
-        <img src="assets/images/image-gaming-growth.jpg" alt="">
-        <h2>
-          <span>
-            03
-          </span>
-          The Growth of Gaming How the pandemic has sparked fresh opportunities.
-        </h2>
-      </article>
-    </section>
-  </main>
-    
+        <article class="sidebar-item">
+          <a href="http://" class="sidebar-link"
+            >The Downsides of AI Artistry</a
+          >
+          <p class="sidebar-description">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="sidebar-item">
+          <a href="http://en.wikipedia.org/wiki/" class="sidebar-link"
+            >Is VC Funding Drying Up?</a
+          >
+          <p class="sidebar-description">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </section>
+        <article class="blog">
+          <img src="assets/images/image-retro-pcs.jpg" alt="" />
+          <div>
+            <span class="num"> 01 </span>
+            <a href="" class="blog-link">Reviving Retro PCs</a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+        <article class="blog">
+          <img src="assets/images/image-top-laptops.jpg" alt="" />
+          <div>
+            <span class="num"> 02 </span>
+            <a href="" class="blog-link">Top 10 Laptops of 2022</a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+        <article class="blog">
+          <img src="assets/images/image-gaming-growth.jpg" alt="" />
+          <div>
+            <span class="num"> 03 </span>
+            <a href="" class="blog-link">The Growth of Gaming</a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Muhamad Farhan Junaldi</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
